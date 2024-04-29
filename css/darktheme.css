@@ -1,0 +1,40 @@
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #f0f8ff;
+    background-color: #02223f;
+  }
+
+  h1 {
+    color: #cbe3f8;
+  }
+  #container {
+    background-color: #011e38;
+  }
+
+  #measuring-system button {
+    color: #cbe3f8;
+  }
+
+  #weight,
+  #height {
+    color: #cbe3f8;
+    background-color: transparent;
+    border-bottom: 2px solid #cbe3f8;
+  }
+
+  #weight:focus,
+  #height:focus {
+    outline: none;
+    border-left: 2px double #cbe3f8;
+  }
+
+  #wmt,
+  #hmt {
+    color: #02223f;
+    background-color: #cbe3f8;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

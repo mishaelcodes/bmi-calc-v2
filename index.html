@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/darktheme.css">
+    <title>Body Mass Index</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Body Mass Index</h1>
+      <div id="form-container">
+        <div id="measuring-system">
+          <button id="metric" class="selected">Metric</button>
+          <button id="imperial">Imperial</button>
+        </div>
+        <div id="weight-container">
+          <input
+            type="number"
+            id="weight"
+            placeholder="Please input your weight"
+          />
+          <select name="weight measurement type" id="wmt">
+            <option value="kilograms" id="kg">kg</option>
+            <option value="pounds" id="lb">lb</option>
+          </select>
+        </div>
+        <div id="height-container">
+          <input
+            type="number"
+            id="height"
+            placeholder="Please input your height"
+          />
+          <select name="height measurement type" id="hmt">
+            <option value="meters" id="m">m</option>
+            <option value="centimeters" id="cm">cm</option>
+            <option value="inches" id="in">in</option>
+          </select>
+        </div>
+        <button type="submit" id="btn" class="btn">Calculate BMI</button>
+      </div>
+
+      <!-- ----- chart ----- -->
+      <div id="chart-container" class="hide">
+        <h2>Chart</h2>
+        <ul>
+          <li><span class="range under">Less than 18.5</span> => Underweight</li>
+          <li><span class="range norm">Between 18.5 - 24.9</span> => Normal</li>
+          <li><span class="range over">Greater than 24.9</span> => Overweight</li>
+          <li><span class="range obese">Greater than 30</span> => Obese</li>
+        </ul>
+      </div>
+
+      <div id="result-container">
+        <p id="bmi"></p>
+        <p id="result"></p>
+      </div>
+      <div id="btn-container">
+        <button type="button" id="chartBtn" class="btn">Chart</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
